@@ -42,83 +42,41 @@
 </svelte:head>
 
 <section class="section-padding bg-white">
-	<div class="container-custom max-w-5xl">
-		<div class="mb-16">
-			<div class="grid md:grid-cols-2 gap-12 items-center">
-				<div class="aspect-square bg-gray-200 rounded-lg overflow-hidden">
-					<div class="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
-						<span class="text-gray-500">Profile Photo</span>
-					</div>
-				</div>
-				<div>
-					<h1 class="text-4xl md:text-5xl font-bold mb-6">Wilson Malakkaran</h1>
-					<p class="text-lg text-gray-700 mb-4">
-						Contemporary Artist
-					</p>
-					<p class="text-gray-600 mb-4">
-						Born 1985, Kerala, India
-					</p>
-					<p class="text-gray-600">
-						Based in Kerala
-					</p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="flex justify-center gap-4 mb-8">
+	<div class="container-custom max-w-4xl">
+		<div class="flex justify-center gap-4 mb-12">
 			<button 
-				class="px-4 py-2 rounded-lg transition-colors {currentLang === 'en' ? 'bg-gray-900 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}"
+				class="px-4 py-2 rounded-lg transition-colors {currentLang === 'en' ? 'bg-black text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}"
 				on:click={() => setLanguage('en')}
 			>
 				English
 			</button>
 			<button 
-				class="px-4 py-2 rounded-lg transition-colors {currentLang === 'it' ? 'bg-gray-900 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}"
+				class="px-4 py-2 rounded-lg transition-colors {currentLang === 'it' ? 'bg-black text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}"
 				on:click={() => setLanguage('it')}
 			>
 				Italiano
 			</button>
 			<button 
-				class="px-4 py-2 rounded-lg transition-colors {currentLang === 'ml' ? 'bg-gray-900 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}"
+				class="px-4 py-2 rounded-lg transition-colors {currentLang === 'ml' ? 'bg-black text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}"
 				on:click={() => setLanguage('ml')}
 			>
 				മലയാളം
 			</button>
 		</div>
 		
-		<div class="prose prose-lg max-w-none">
-			<h2 class="text-3xl font-bold mb-8 text-center">{statements[currentLang].title}</h2>
+		<div class="prose prose-lg max-w-none mb-16">
 			{#each statements[currentLang].content as paragraph}
-				<p class="text-gray-700 leading-relaxed mb-6 {currentLang === 'ml' ? 'text-right' : ''}">
+				<p class="text-gray-700 leading-relaxed mb-6 text-justify">
 					{paragraph}
 				</p>
 			{/each}
 		</div>
 		
-		<div class="mt-16 pt-16 border-t border-gray-200">
-			<h2 class="text-3xl font-bold mb-8">Curriculum Vitae</h2>
-			
-			<div class="space-y-8">
-				<div>
-					<h3 class="text-xl font-semibold mb-4">Education</h3>
-					<div class="space-y-2 text-gray-700">
-						<p>Add education details here</p>
-					</div>
-				</div>
-				
-				<div>
-					<h3 class="text-xl font-semibold mb-4">Selected Exhibitions</h3>
-					<div class="space-y-2 text-gray-700">
-						<p>Add exhibition history here</p>
-					</div>
-				</div>
-				
-				<div>
-					<h3 class="text-xl font-semibold mb-4">Collections</h3>
-					<div class="space-y-2 text-gray-700">
-						<p>Add collection information here</p>
-					</div>
-				</div>
+		<div class="border-t border-gray-200 pt-12">
+			<h2 class="text-2xl font-bold mb-8">Selected Exhibitions</h2>
+			<div class="space-y-4 text-gray-700">
+				<p><a target="_blank" href="https://www.exibart.com/evento-arte/i-colori-maturano-la-notte/">2023 - I colori maturano la notte, Studio110, Rome</a></p>
+				<p><a target="_blank" href="https://bonomogallery.com/en/wilson-malakkaran-dal-31-ottobre-2022/">2022 - Wilson Malakkaran, Gallery Alessandra Bonomo, Rome</a></p>
 			</div>
 		</div>
 	</div>
