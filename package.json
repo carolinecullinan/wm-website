@@ -4,6 +4,9 @@
   "private": true,
   "description": "Professional art portfolio for Wilson Malakkaran",
   "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
