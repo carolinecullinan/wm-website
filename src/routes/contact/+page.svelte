@@ -44,8 +44,8 @@
 					<h2 class="text-2xl font-bold mb-4">Address</h2>
 					<address class="text-gray-600 not-italic leading-relaxed">
 						Via di Porta San Lorenzo 4<br>
-						Rome, Italy, 00185 <br>
-						RM, Italy
+						00185 Rome, RM <br>
+						Italy
 					</address>
 				</div>
 			</div>
