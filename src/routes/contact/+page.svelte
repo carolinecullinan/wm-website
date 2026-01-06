@@ -33,7 +33,7 @@
 						<div>
 							<p class="text-gray-600 text-sm mb-1">Email</p>
 							<a href="mailto:info@wilsonmalakkaran.com" class="text-gray-900 hover:text-gray-600 transition-colors">
-								info@wilsonmalakkaran.com
+								wilsonmalakkaran@gmail.com
 							</a>
 						</div>
 					</div>
